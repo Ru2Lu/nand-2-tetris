@@ -1,0 +1,32 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/Reverse16.hdl
+
+/**
+ * Adds two 16-bit values.
+ * The most significant carry bit is ignored.
+ */
+
+CHIP Reverse16 {
+    IN a[16], nx;
+    OUT out[16];
+
+    PARTS:
+        Reverse (a=a[0], nx=nx, out=out[0]);
+        Reverse (a=a[1], nx=nx, out=out[1]);
+        Reverse (a=a[2], nx=nx, out=out[2]);
+        Reverse (a=a[3], nx=nx, out=out[3]);
+        Reverse (a=a[4], nx=nx, out=out[4]);
+        Reverse (a=a[5], nx=nx, out=out[5]);
+        Reverse (a=a[6], nx=nx, out=out[6]);
+        Reverse (a=a[7], nx=nx, out=out[7]);
+        Reverse (a=a[8], nx=nx, out=out[8]);
+        Reverse (a=a[9], nx=nx, out=out[9]);
+        Reverse (a=a[10], nx=nx, out=out[10]);
+        Reverse (a=a[11], nx=nx, out=out[11]);
+        Reverse (a=a[12], nx=nx, out=out[12]);
+        Reverse (a=a[13], nx=nx, out=out[13]);
+        Reverse (a=a[14], nx=nx, out=out[14]);
+        Reverse (a=a[15], nx=nx, out=out[15]);
+}
